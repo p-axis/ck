@@ -130,10 +130,7 @@ ul li a:active::before {
      padding: 0;
      overflow-x: hidden;
      overflow-y: scroll;
-
-
-
-
+     scroll-snap-type: y mandatory;
  }
  .hero{
     display: flex;
@@ -567,6 +564,5 @@ ul li a:active::before {
     height: 100vh;
     width: 100%;
     position: relative;
-
-
+    scroll-snap-align: center;
 }
