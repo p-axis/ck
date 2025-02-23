@@ -276,6 +276,8 @@ ul li a:active::before {
     position: relative;
     transform: translate(-6%, -50%);
     margin-top: 120px;
+    top: 50%;
+    left:50%;
 }
 .sha {
     display: flex;
