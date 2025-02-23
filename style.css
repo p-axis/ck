@@ -130,7 +130,6 @@ ul li a:active::before {
      padding: 0;
      overflow-x: hidden;
      overflow-y: scroll;
-     scroll-snap-type: y;
  }
  .hero{
     display: flex;
@@ -150,7 +149,7 @@ ul li a:active::before {
     padding-top: 150px;
     left: 0;
     height: 100%;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
  }
 .btn{
     width: 100px;
