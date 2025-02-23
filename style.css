@@ -150,6 +150,7 @@ ul li a:active::before {
     padding-top: 150px;
     left: 0;
     height: 100%;
+    scroll-snap-align: center;
  }
 .btn{
     width: 100px;
