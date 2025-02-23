@@ -54,9 +54,9 @@ nav {
     align-items: center;
     top: 0%;
     width: 100%;
-    background-image: linear-gradient(180deg, #46063bc4, #0a5166c7);
+    background-image: linear-gradient(180deg, #ff2fdc34, #0a5166f3);
     filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.753));
-    box-shadow: inset 1px 1px 20px 1px #ffffff17
+    box-shadow: inset 1px 1px 20px 1px #ffffff17;
     background-size: cover;
     background-position: center;
     position: sticky;
@@ -64,7 +64,6 @@ nav {
     flex-wrap: wrap;
     padding-bottom: 15px;
     height: max-content;
-}
 ul {
     list-style: none;
     margin: 0;
