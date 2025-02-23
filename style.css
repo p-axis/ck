@@ -16,6 +16,8 @@ body {
     justify-content: center;
     padding-left: 10px;
     overflow-x: hidden;
+    position: relative;
+    
 }
 
 @media (min-width: 150px) and (max-width: 450px) {
