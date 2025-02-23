@@ -176,12 +176,14 @@ ul li a:active::before {
     justify-content: center;
     flex-wrap: wrap;
     word-wrap: normal;
-    position: relative;
-    transform: translateY(-200px);
+    position: absolute;
+    transform: translateX(7%);
+    padding: 20px;
     left: auto;
     max-width: 700px;
-    z-index: 9;
+    z-index: 99999999999999999999999999999999999999999;
     filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.144));
+    margin: 10px;
     
 
 }
