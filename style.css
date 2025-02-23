@@ -152,7 +152,6 @@ ul li a:active::before {
     top: 70%;
     padding-top: 150px;
     left: 0;
-    width: 95%;
     height: 100%;
  }
 .btn{
