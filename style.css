@@ -270,7 +270,7 @@ ul li a:active::before {
     justify-content: center;
     flex-wrap: wrap;
     word-wrap: normal;
-    width: 60%;
+    width: 80%;
     position: relative;
     transform: translate(-6%, -50%);
     margin-top: 120px;
