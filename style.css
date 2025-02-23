@@ -55,7 +55,7 @@ nav {
     filter: drop-shadow(8px 8px 10px rgba(58, 1, 48, 0.226));
     background-size: cover;
     background-position: center;
-    position: fixed;
+    position: sticky;
     z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
     flex-wrap: wrap;
     padding-bottom: 15px;
