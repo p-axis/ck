@@ -272,8 +272,6 @@ ul li a:active::before {
     word-wrap: normal;
     width: 60%;
     position: relative;
-    top: 30vh;
-    left: 1px;
     transform: translate(-6%, -50%);
     margin-top: 120px;
 }
