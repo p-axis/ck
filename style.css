@@ -55,7 +55,7 @@ nav {
     top: 0%;
     width: 100%;
     background-image: linear-gradient(180deg, #46063bc4, #0a5166c7);
-    filter: drop-shadow(8px 8px 10px rgba(58, 1, 48, 0.226));
+    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.753));
     box-shadow: inset 1px 1px 20px 1px #ffffff3d;
     background-size: cover;
     background-position: center;
@@ -152,7 +152,8 @@ ul li a:active::before {
     top: 70%;
     padding-top: 150px;
     left: 0;
-    width: 100%;
+    width: 95%;
+    height: 100%;
  }
 .btn{
     width: 100px;
@@ -186,6 +187,8 @@ ul li a:active::before {
     left: auto;
     max-width: 700px;
     z-index: 9;
+    filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.144));
+    
 
 }
 .sha {
