@@ -130,7 +130,7 @@ ul li a:active::before {
      padding: 0;
      overflow-x: hidden;
      overflow-y: scroll;
-     scroll-snap-type: y mandatory;
+     scroll-snap-type: y;
  }
  .hero{
     display: flex;
