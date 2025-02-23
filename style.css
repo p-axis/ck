@@ -13,161 +13,12 @@ body {
     background-image: linear-gradient(180deg, #001222, #041600d5);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding-left: 10px;
     overflow-x: hidden;
-    position: relative;
-    
+    padding: 0;
 }
 
-@media (min-width: 150px) and (max-width: 450px) {
-
-    ul li a{
-        margin: 0 6px;
-        font-size: 12px;
-        font-weight: bold;
-        color: #fff;
-        z-index: 9999999999999999999;
-    
-    }
-  
-    body{
-        padding-top: 20vh;
-        padding-left: 0;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        width: 300px;
-    }
-    .social {
-    
-        display: flex; 
-
-
-    
-    }
-    .so{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-        width: 10px;
-        gap: 10px;
-        left: 365px;
-        top: 80px;
-        position: absolute;
-        left: 465px;
-        
-    }
-    .hero-con {
-        display: flex;
-        text-align: center;
-        color: #fff;
-        z-index: 999999993999992;
-        border-radius: 10px;
-        border: solid 1px hsla(0, 0%, 100%, 0.212);
-        box-shadow: inset #8a8a8a1e 0px 0px 10px 10px;
-        align-items: center;
-        justify-content: center;
-        transform: translateX(20%);
-        transform: scale(10%, 10%);
-        top: 30vh;
-        margin-top: 30vh;
-        width: 300px;
-        margin-left: 30px;
-    }
-    nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: flex-end;
-        top: 0%;
-        width: 350px;
-        background-image: linear-gradient(180deg, #46063b62, #0a516642);
-        height: fit-content;
-        margin-bottom: 200px;
-        position: fixed;
-        flex-wrap: wrap;
-        position: fixed;
-        top: 10px;
-
-        
-    }
-    ul{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        left: 1%;
-    }
-    ul li {
-        list-style-type: none;
-        margin: 0 10px;
-        font-size: 10px;
-        font-weight: bold;
-        color: #fff;
-    }
-    ul li a{
-        margin: 0 6px;
-        font-size: 12px;
-        font-weight: bold;
-        color: #fff;
-
-    }
-  
-    .hero-con {
-        display: flex;
-        text-align: center;
-        color: #fff;
-        z-index: 999999993999992;
-        border-radius: 10px;
-        border: solid 1px hsla(0, 0%, 100%, 0.212);
-        box-shadow: inset #8a8a8a1e 0px 0px 10px 10px;
-        align-items: center;
-        justify-content: center;
-        transform: translateX(20%);
-        transform: scale(10%, 10%);
-        top: 30vh;
-        margin-top: 30vh;
-        width: 300px;
-        margin-left: 30px;
-    }
-    .hero-con h1{
-        font-size: 20px;
-        font-weight: 700;
-    }
-    .title {
-        font-size: 4px;
-        font-weight: 700;
-        flex-shrink: 1;
-        top: 40px;
-        left: 155px;
-        position: absolute;
-        left: 450px;
-    }
-    .title h1{
-        font-size: 17px;
-        font-weight: 700;
-        flex-shrink: 1;
-        left: 290px;
-        top: -20px;
-    }
-    .card1, .card2, .card3, .card4{
-        padding: 0;
-        display: flex;
-        transform: translate(-10px 0px);
-        position: relative;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 200px;
-        height: 200px;
-        border-radius: 10px;
-        left: 3px;
-        border: solid 1px hsla(0, 0%, 100%, 0.137);
-    }
-    
-}
 .social {
     
     flex-direction: row;
@@ -190,7 +41,7 @@ body {
 .so{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 nav {
     display: flex;
@@ -200,9 +51,14 @@ nav {
     top: 0%;
     width: 100%;
     background-image: linear-gradient(180deg, #46063bc4, #0a5166c7);
-    height: 80px;
+    filter: drop-shadow(8px 8px 10px rgba(58, 1, 48, 0.226));
+    background-size: cover;
+    background-position: center;
     position: fixed;
-    z-index: 999999999999999999999999999999999999999999999999999999999999999999999;
+    z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    height: max-content;
 }
 ul {
     list-style: none;
@@ -246,6 +102,49 @@ ul li a:active::before {
      transition: width 0.3s ease-in-out;
      text-decoration: underline;
  }
+ ul{
+    left: 0%;
+ }
+ .parallax{
+     height: 100vh;
+     width: 100%;
+     display: grid;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     color: #fff;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.664);
+     flex-direction: column;
+     position: relative;
+     top: 0%;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+     overflow-y: scroll;
+
+
+
+
+ }
+ .hero{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    flex-wrap: wrap;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.226);
+    position: relative;
+    margin-top: 300px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    top: 70%;
+    padding-top: 150px;
+    left: 0;
+    width: 100%;
+ }
 .btn{
     width: 100px;
     height: 40px;
@@ -272,12 +171,13 @@ ul li a:active::before {
     justify-content: center;
     flex-wrap: wrap;
     word-wrap: normal;
-    width: 80%;
     position: relative;
-    transform: translate(-6%, -50%);
-    margin-top: 120px;
-    top: 50%;
-    left:50%;
+    transform: translateY(-60%);
+    padding: 20px;
+    left: auto;
+    max-width: 700px;
+    z-index: 99999999999999999999999999999999999999999;
+
 }
 .sha {
     display: flex;
@@ -291,7 +191,7 @@ ul li a:active::before {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, #52073054, #2692b365);
+    background-image: linear-gradient(80deg, #520730d0, #2692b3a8);
     z-index: -999999;
     border: solid 1px #3b3b3b;
     box-shadow: inset 0 0px 20px 10px #88577d11;
@@ -327,7 +227,7 @@ ul li a:active::before {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, #5207307c, #2692b36e);
+    background-image: linear-gradient(80deg, #520730b7, #2692b3be);
     
     z-index: 1;
     border: solid 1px #3b3b3b;
@@ -366,7 +266,7 @@ ul li a:active::before {
     width: 280px;
     height: 280px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, #5207306e, #2692b377);
+    background-image: linear-gradient(80deg, #520730b6, #2692b3a8);
     
     z-index: 1;
     border: solid 1px #3b3b3b;
@@ -409,9 +309,7 @@ ul li a:active::before {
     width: 680px;
     height: 680px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, #52073073, #2692b37a);
-    
-    z-index: 9999999999999999999999;
+    background-image: linear-gradient(80deg, #520730be, #2692b3b9);
     border: solid 1px #3b3b3b;
     box-shadow: inset 0 0px 20px 10px #88577d13;
     border: #ffffff2f;
@@ -428,7 +326,7 @@ ul li a:active::before {
     width: 68px;
     height: 68px;
     border-radius: 50%;
-    background-image: linear-gradient(80deg, #52073094, #2692b37e);
+    background-image: linear-gradient(80deg, #52073094, #2692b3c4);
     
     z-index: 1;
     border: solid 1px #3b3b3b;
@@ -471,7 +369,7 @@ ul li a:active::before {
     border-radius: 50%;
     background-image: radial-gradient(80deg, #520730d0, #2692b3cb);
     z-index: 1;
-    box-shadow: 100px 100px 100px 100px #00ffea6e;
+    box-shadow: 100px 100px 100px 100px #00ffea77;
     border: #ffffff2f;
     animation: shape2;
     animation-duration: 75s;
@@ -483,14 +381,29 @@ ul li a:active::before {
  {
     position: absolute;
     top: 10%;
-    left: 42%;
-    width: .1px;
-    height: .1px;
+    left: 72%;
+    width: 44.1px;
+    height: 44.1px;
     border-radius: 50%;
     background-image: radial-gradient(80deg, #520730d0, #2692b3cb);
     z-index: 1;
     border: solid 1px #3b3b3b;
-    box-shadow: 100px 300px 100px 400px #02ffff09;
+    box-shadow: 100px 300px 100px 400px #39ffce0a;
+    border: #ffffff2f;
+}
+.shape9
+ {
+    position: absolute;
+    top: 10%;
+    left: 52%;
+    left: 52%;
+    width: .1px;
+    height: .1px;
+    border-radius: 50%;
+    background-image: radial-gradient(80deg, #ff41aa38, #cf30ff2f);
+    z-index: 1;
+    border: solid 1px #3b3b3b;
+    box-shadow: 100px 300px 100px 400px #ea02ff0c;
     border: #ffffff2f;
 }
 .sub{
@@ -524,13 +437,16 @@ ul li a:active::before {
     gap: 20px;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
     height: 10px;
     width: 100%;
     flex-wrap: wrap;
-    margin: 0 20px 20px;
-    right: 20%;
-    top: 2%;
+    position: relative;
+    top: 10px;
+    left: 0px;
+    flex: 1;
+
 }
 .card1{
     display: grid;
@@ -538,12 +454,14 @@ ul li a:active::before {
     flex: 1 0 250px;
     position: relative;
     background-image: linear-gradient(rgba(44, 0, 58, 0.082), rgba(247, 0, 255, 0.062));
+    box-shadow: #ffffff71;
     padding-top: 60px;
-    align-items: center;
+    align-items: start;
     text-align: center;
     box-shadow: inset #8098af10 10px 10px 10px;
     z-index: 1;
     justify-content: center;
+    margin: 0;
 }
 .card1 h2{
     text-align: center;
@@ -563,7 +481,7 @@ ul li a:active::before {
     position: relative;
     background-image: linear-gradient(rgba(44, 0, 58, 0.082), rgba(247, 0, 255, 0.062));
     flex: 1 0 250px;
-    align-items: center;
+    align-items: start;
     text-align: center;
     box-shadow: inset #8098af10 10px 10px 10px;
     z-index: 1;
@@ -581,11 +499,12 @@ ul li a:active::before {
     font-size: 15px;
 }
 .card3{
+    display: grid;
     border: solid 1px hsla(0, 0%, 83%, 0.87);
     position: relative;
     background-image: linear-gradient(rgba(44, 0, 58, 0.082), rgba(247, 0, 255, 0.062));
     flex: 1 0 250px;
-    align-items: center;
+    align-items: start;
     text-align: center;
     box-shadow: inset #8098af10 10px 10px 10px;
     z-index: 1;
@@ -606,11 +525,12 @@ ul li a:active::before {
 .card4{
     
     border: solid 1px hsla(0, 0%, 83%, 0.87);
-    
+    display: grid
+    ;
     position: relative;
     background-image: linear-gradient(rgba(44, 0, 58, 0.082), rgba(247, 0, 255, 0.062));
     flex: 1 0 250px;
-    align-items: center;
+    align-items: start;
     text-align: center;
     box-shadow: inset #8098af10 10px 10px 10px;
     z-index: 1;
@@ -629,11 +549,13 @@ ul li a:active::before {
     font-size: 15px;
 }
 .About{
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     height: 100vh;
-    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+
 
 }
