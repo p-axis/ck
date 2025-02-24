@@ -13,10 +13,10 @@ body {
     background-image: linear-gradient(180deg, #001222, #041600d5);
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     padding-left: 10px;
-    overflow-x: hidden;
     padding: 0;
+    
 }
 
 .social {
@@ -33,19 +33,20 @@ body {
 .title {
     font-size: 24px;
     font-weight: 700;
+    flex-shrink: 0;
     z-index: 9999999999999999999;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: center;
 
 }
 
 .so{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding-left: 100px;
+    justify-content: center;
+    padding-left: 200px;
+
 }
 nav {
     display: flex;
@@ -54,7 +55,7 @@ nav {
     align-items: center;
     top: 0%;
     width: 100%;
-    background-image: linear-gradient(180deg, #ff2fdc34, #0a5166f3);
+    background-image: linear-gradient(180deg, #46003c, #005068);
     filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.753));
     box-shadow: inset 1px 1px 20px 1px #ffffff17;
     background-size: cover;
@@ -64,6 +65,7 @@ nav {
     flex-wrap: wrap;
     padding-bottom: 15px;
     height: max-content;
+}
 ul {
     list-style: none;
     margin: 0;
@@ -128,27 +130,63 @@ ul li a:active::before {
      margin: 0;
      padding: 0;
      overflow-x: hidden;
+     overflow-y: auto;
      
  }
  .hero{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: relative;
     text-align: center;
     flex-wrap: wrap;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.226);
     position: relative;
-    margin-top: 300px;
     padding: 0;
     margin: 0;
     justify-content: center;
     align-items: center;
-    top: 70%;
     padding-top: 150px;
     left: 0;
-    height: 100%;
+    width: 100vw;
+    height: 130vh;
+    background-image: url("hero1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+    
+    
+  
  }
+ .hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -99999999999991;
+    
+ }
+ .hero h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.226);
+    color: #fff;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+ }
+    
+   
 .btn{
     width: 100px;
     height: 40px;
@@ -169,26 +207,30 @@ ul li a:active::before {
     color: #fff;
     flex-direction: column;
     border-radius: 10px;
-    border: solid 1px hsla(0, 0%, 100%, 0.212);
+    border: solid 1px hsla(0, 0%, 100%, 0.534);
     box-shadow: inset #8a8a8a1e 0px 0px 10px 10px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     word-wrap: normal;
-    position: absolute;
-    transform: translateX(7%);
+    transform: translate(7% 800px);
     padding: 20px;
     left: auto;
-    max-width: 700px;
-    z-index: 99999999999999999999999999999999999999999;
+    max-width: 600px;
+    z-index: 9;
     filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.144));
     margin: 10px;
-    
+    background-image: linear-gradient(180deg, #0012220e, #04160063);
+    position: sticky;
+    top: -100px;
 
 }
 .sha {
     display: flex;
-    overflow: hidden;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+
 }
 
 .shape2 {
@@ -440,19 +482,22 @@ ul li a:active::before {
     font-weight: 500;
 }
 .card-container{
-    display: flex;
-    gap: 20px;
-    flex-direction: row;
-    align-items: flex-start;
+   display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-wrap: wrap;
-    height: 10px;
-    width: 100%;
-    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(rgba(44, 0, 58, 0.082), rgba(247, 0, 255, 0.062));
+    border: solid 1px #3b3b3b3b;
+    box-shadow: inset #8098af10 10px 10px 10px;
+    z-index: 1;
+    justify-content: center;
+    margin: 0;
     position: relative;
-    top: 10px;
-    left: 0px;
-    flex: 1;
 
 }
 .card1{
@@ -560,7 +605,15 @@ ul li a:active::before {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     position: relative;
+    background-image: linear-gradient(rgba(44, 0, 58, 0.082), rgba(247, 0, 255, 0.062));
+    box-shadow: inset #8098af10 10px 10px 10px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
 }
+ 
