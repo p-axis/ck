@@ -89,7 +89,7 @@
 
         .navbar {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
         }
 
@@ -195,20 +195,21 @@
             align-items: center;
             position: relative;
             padding-top: 100px;
-            overflow: hidden;
+            flex-wrap: wrap;
             max-width: 80vw;
-            justify-content: center;
-            left: 10%;
+            justify-content: flex-start;
+            
         }
 
         .hero-content {
-            max-width: fit-content;
+            min-width: 100%;
             z-index: 2;
             position: relative;
 
         }
         .hero-content h1{
-            max-width: fit-content;
+            max-width: 90%;
+            flex-wrap: wrap;
             z-index: 2;
             position: relative;
             background-image: linear-gradient(to right rgb(134, 15, 35), rgb(92, 10, 37));
@@ -830,18 +831,42 @@
                 display: none;
             }
             .btn{
-                padding: 12px 24px;
                 font-size: 1rem;
                 width: min-content;
                 text-align: center;
                 flex-wrap: nowrap;
-                width: 5rem;
+                width: 10rem;
+            }
+            .hero-content{
+                text-align: start;
+                width: max-content;
+                align-items: center;
+                justify-content: flex-start;
             }
             body{
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
+                overflow-x: hidden;
+                overflow-y: scroll;
             }
+                 .navbar {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            min-width: 5rem;
+        }
+        .hero{
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: center;
+            text-align: start;
+            position: relative;
+            top: 10rem;
+        }
+        .section-header{
+            display: grid;
+        }
         }
 
         /* Animation Classes */
